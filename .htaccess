@@ -1,0 +1,28 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Set base directory
+RewriteBase /
+
+# Prevent direct access to PHP files in the classes directory
+RewriteRule ^classes/.*\.php$ - [F,L]
+
+# Prevent direct access to PHP files in the db directory
+RewriteRule ^db/.*\.php$ - [F,L]
+
+# Prevent direct access to PHP files in the utils directory
+RewriteRule ^utils/.*\.php$ - [F,L]
+
+# Allow direct access to API endpoints
+RewriteRule ^api/ - [L]
+
+# Allow direct access to assets
+RewriteRule ^assets/ - [L]
+
+# Allow direct access to uploads
+RewriteRule ^uploads/ - [L]
+
+# Redirect all other requests to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]

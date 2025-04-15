@@ -1,0 +1,92 @@
+/* Custom styles for Font Group System */
+/* Font Upload Area */
+.upload-area { border: 2px dashed #ccc; border-radius: 5px; padding: 40px; text-align: center; cursor: pointer; transition: all 0.3s ease;
+}
+.upload-area:hover { border-color: #0d6efd; background-color: #f8f9fa;
+}
+.upload-icon { color: #6c757d; margin-bottom: 15px;
+}
+.upload-area.dragover { border-color: #0d6efd; background-color: #f0f7ff;
+}
+/* Font Preview */
+.font-preview { font-size: 18px; display: inline-block; padding: 5px 0; min-height: 30px; min-width: 150px;
+}
+/* Drag Handle */
+.drag-handle { cursor: move; font-size: 20px; color: #6c757d;
+}
+/* Custom Font Styles */
+@font-face { font-family: "CustomFont"; src: url("../fonts/placeholder.ttf") format("truetype");
+}
+/* Define classes for each uploaded font */
+.font-preview { font-size: 18px; line-height: 1.5; display: inline-block; padding: 5px 0; min-height: 30px; min-width: 150px;
+}
+/* Action buttons */
+.action-btn { cursor: pointer;
+}
+.action-btn:hover { opacity: 0.8;
+}
+/* Font row styling */
+.font-row { background-color: #fff; padding: 10px 5px; border-radius: 5px; transition: all 0.3s ease; margin-bottom: 10px; border: 1px solid #dee2e6; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.font-row .row { margin: 0; width: 100%;
+}
+.font-row:not(:last-child) { border-bottom: 1px solid #dee2e6;
+}
+.remove-row { color: #dc3545; background: transparent; border: none; font-size: 20px; line-height: 1; padding: 0; margin-left: 0;
+}
+/* Drag handle styling */
+.drag-handle { cursor: move; display: inline-flex; align-items: center; justify-content: center; padding: 0 5px; margin-right: 0; height: 38px;
+}
+.drag-handle svg { display: block; transition: stroke 0.2s ease, transform 0.2s ease;
+}
+.drag-handle:hover svg { stroke: #0d9488; transform: scale(1.1);
+}
+/* Specific Size and Price Change styling */
+.size-input,
+.price-input { position: relative;
+}
+.size-input span,
+.price-input span { margin-bottom: 5px;
+}
+.size-input input,
+.price-input input { padding-right: 30px; background-color: #f8f9fa; height: 38px;
+}
+/* Dropdown arrows styling */
+.dropdown-arrows { position: absolute; right: 0; top: 0; bottom: 0; display: flex; flex-direction: column; height: 38px; border-left: 1px solid #dee2e6;
+}
+.dropdown-arrows button { background: none; border: none; padding: 0; margin: 0; display: block; height: 19px; width: 100%;
+}
+.dropdown-arrows svg { display: block; margin: auto; cursor: pointer; stroke: #6c757d; transition: stroke 0.2s ease;
+}
+.dropdown-arrows button:hover svg { stroke: #0d9488;
+}
+.dropdown-arrows button:active svg { stroke: #0a6e65;
+}
+.arrow-up { border-bottom: 1px solid #dee2e6;
+}
+/* Fix column padding */
+.font-row .col-auto.pr-0 { padding-right: 0 !important;
+}
+.font-row .col-auto.pl-0 { padding-left: 0 !important;
+}
+.font-row .col-3,
+.font-row .col-2 { padding: 0 8px;
+}
+/* Fix input heights */
+.font-row .form-control,
+.font-row .form-select { height: 38px;
+}
+/* Create button styling */
+#createGroupBtn { background-color: #0d9488 !important; border-color: #0d9488 !important;
+}
+/* Add Row button styling */
+#addRowBtn { border-color: #0d9488; color: #0d9488; background-color: transparent; padding: 6px 12px; font-size: 14px; border-radius: 4px;
+}
+/* Group title input styling */
+#groupTitle { border-radius: 4px; border: 1px solid #dee2e6; padding: 10px 15px; margin-bottom: 15px;
+}
+/* Column headers styling */
+.font-header-row { font-weight: 600; color: #333; padding: 0 5px;
+}
+.font-header-row div { padding-top: 5px; padding-bottom: 5px;
+}

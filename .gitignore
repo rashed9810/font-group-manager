@@ -1,0 +1,48 @@
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# PHP dependencies
+/vendor/
+composer.lock
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Uploaded fonts (except placeholder)
+/uploads/fonts/*
+!/uploads/fonts/.gitkeep
+
+# Logs
+/logs/
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.cache
+
+# Build files
+/node_modules/
+/dist/
+/build/
+
+# Database backups
+*.sql
+*.sqlite
+*.db

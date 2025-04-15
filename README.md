@@ -24,7 +24,7 @@ A web application for managing custom fonts and creating font groups with custom
 1. Clone the repository:
 
    ```
-   git clone https://github.com/yourusername/font-group-system.git
+   git clone https://github.com/rashed9810/font-group-manager.git
    ```
 
 2. Create a MySQL database named `font_group_system`
